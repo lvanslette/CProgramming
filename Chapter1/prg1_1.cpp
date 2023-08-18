@@ -3,9 +3,10 @@ Use time24 objects to compute cost of parking a car in a garage if the rate is 6
 - User inputs time at which a customer engters and exits the garage
 - Program outputs a receipt that includes the enter and exit times, the length of time the car has parked there, and the total charges
 */
+#include "d_time24.h"
 
 #include <iostream>
-#include "d_time24.h"
+
 
 using namespace std;
 

@@ -14,6 +14,22 @@ class time24
             // Postcondition: Assign value hh to hour and mm to minute, adjust units to the proper range
         void writeTime() const;             // display on the screen the current time in the form hh:mm
 
+        // binary + operators: add minute and time24 objects
+        friend time24 operator+ (const time24& lhs, const time24& rhs);
+        friend time24 operator+ (const time24& lhs, int min);
+        friend time24 operator+ (int min, const time24& rhs);
+
+        // binary - operator: subtract 2 time24 objects if rhs is not earlier than lhs. if this precondition is not satisfied, throw a range_error exception
+        friend time24 operator- (const time24& lhs, const time24& rhs);
+
+        // comparison operators
+        //friend bool operator== (const time24& lhs, const time24& rhs);
+        friend bool operator< (const time24& lhs, const time24& rhs);
+
+        // I/O operators
+        friend std::ostream& operator<<(std::ostream& ostr, const time24& t);
+        friend std::istream& operator>>(std::istream& istr, time24& t);
+
         // access member functions
         int getHour() const;                // return the hour value for the current time
         int getMinute() const;              // return the minute value for the current time

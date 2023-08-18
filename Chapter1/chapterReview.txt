@@ -1,0 +1,12 @@
+1. a. An object in an instantiation of a class.
+1. b. 
+2.  
+class triangle
+{
+    public:
+        triangle(double B = 3.0, double B = 3.0, double THETA = 90) : b(B), c(C), THETA(theta)
+        double thirdSide() {return sqrt(b^2+c^2-2*b*c*cos(theta))};
+
+    private:
+        double b,c,theta;
+}
