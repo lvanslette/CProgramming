@@ -41,9 +41,9 @@ std::vector<T> join (std::vector<T> a, std::vector<T> b)
 
 int main() {
     int a_arr[] = {1,1,1,1,1};
-    std::vector<int> a(a_arr, a_arr+sizeof(a_arr)/sizeof(int));        // vector with size 5 with all elements equal to 1
+    std::vector<int> a(a_arr, a_arr+sizeof(a_arr)/sizeof(int));        // vector created from array a_arr
     int b_arr[] = {2,2,2,2};
-    std::vector<int> b(b_arr, b_arr+sizeof(b_arr)/sizeof(int));        // vector with size 4 with all elements equal to 2
+    std::vector<int> b(b_arr, b_arr+sizeof(b_arr)/sizeof(int));        // vector created from array b_arr
 
     // create a new vector by joining two vectors
     //std::vector<int> c = join(a,b);
